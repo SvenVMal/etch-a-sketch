@@ -34,13 +34,21 @@ function setGrid() {
             tile.addEventListener('mouseover', function () {
                 tile.style.background = 'black';
             });
+
+            //clearGrid();
         }
     }
 }
 
-function clearGrid() {
-    let clearBtn = document.getElementById('clear');
-    clearBtn.addEventListener('click', function() {
-        // reset the board - return tiles to white
-    });
-}
+
+
+let clearBtn = document.getElementById('clear');
+clearBtn.addEventListener('click', function () {
+    // reset the board - return tiles to white
+    let tiles = document.getElementsByClassName('tile');
+    console.log(tiles.length);
+    for (let i = 0; i < tiles.length; i++) {
+        tiles[i].style.background = 'white';
+    }
+});   
+
