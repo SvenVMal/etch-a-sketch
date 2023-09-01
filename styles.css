@@ -5,15 +5,14 @@ h1 {
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
+    width: 650px;
+    height: 650px;
     margin: 0 auto;
 }
 
 .tile {
-    border: 1px solid rgba(197, 197, 197, 0.952);
-    width: 23px;
-    height: 23px;
+    outline: 1px solid rgba(156, 156, 156);
+    margin: 0 auto;
 }
 
 .controls {
